@@ -1,0 +1,12 @@
+name: Work 1
+on:
+  push:
+    branches:
+      - "feature_b"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "feature_b"
+
