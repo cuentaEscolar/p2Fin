@@ -28,4 +28,3 @@ jobs:
         to: obiwan@example.com,yoda@example.com
         body: Build job of ${{github.repository}} main completed successfully!
 
-        run: echo "main"
