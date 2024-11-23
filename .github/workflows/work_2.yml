@@ -8,4 +8,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print test
-        run: echo "feature_a"
+        uses: dawidd6/action-send-mail@v4
+        with:
+          connection_url: ${{secrets.MAIL_CONNECTION}}
+        # Required mail server address if not connection_url:
+          server_address: smtp.gmail.com
+          # Server port, default 25:
+          server_port: 465
+          # Optional whether this connection use TLS (default is true if server_port is 465)
+          #
+          secure: true
+          # Optional (recommended) mail server username:
+          username: ${{secrets.MAIL_USERNAME}}
+          # Optional (recommended) mail server password:
+          password: ${{secrets.MAIL_PASSWORD}}
+          # Required mail subject:
+          subject: Github Actions job result
+          # Required recipients' addresses:
+          from: "u know who I am :c"
+          to: ${{secrets.MAIL_PASSWORD}}
+          body: Build job of ${{github.repository}} feature_a completed successfully!
+
