@@ -1,11 +1,11 @@
-name: Work 1
+name: Work 2
 on:
   push:
     branches:
-      - "main"
+      - "feature_a"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Print test
-        run: echo "main"
+        run: echo "feature_a"
