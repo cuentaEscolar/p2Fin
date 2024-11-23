@@ -10,3 +10,27 @@ jobs:
       - name: Print test
         run: echo "main"
 
+name: Work 2
+on:
+  push:
+    branches:
+      - "feature_a"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "feature_a"
+
+name: Work 3
+on:
+  push:
+    branches:
+      - "feature_b"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "feature_b"
+
