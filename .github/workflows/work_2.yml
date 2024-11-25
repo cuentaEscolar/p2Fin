@@ -22,7 +22,7 @@ jobs:
           # Optional (recommended) mail server password:
           password: ${{secrets.MAIL_PASSWORD}}
           # Required mail subject:
-          subject: Github Actions job result
+          subject: Cambios subidos a rama feature_a 
           # Required recipients' addresses:
           from: "u know who I am :c"
           to: ${{secrets.MAIL_USERNAME}}
