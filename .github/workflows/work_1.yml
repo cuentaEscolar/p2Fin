@@ -26,6 +26,6 @@ jobs:
           subject: Github Actions job result
           # Required recipients' addresses:
           from: "u know who I am :c"
-          to: smfjlpbbbvoxswysrp@nbmbb.com
+          to:  ${{secrets.MAIL_USERNAME}}
           body: Build job of ${{github.repository}} main completed successfully!
 

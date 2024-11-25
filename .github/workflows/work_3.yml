@@ -10,7 +10,6 @@ jobs:
       - name: Print test
         uses: dawidd6/action-send-mail@v4
         with:
-          connection_url: ${{secrets.MAIL_CONNECTION}}
         # Required mail server address if not connection_url:
           server_address: smtp.gmail.com
           # Server port, default 25:
