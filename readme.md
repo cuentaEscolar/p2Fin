@@ -1,3 +1,3 @@
 hi
 second test
-writing then commit then push then checking my email yay yipeee yahooo
+writing to readme.md then add then commit then checking my email and then actually recording it yeez
